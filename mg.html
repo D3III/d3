@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>MG动画练习（直播类APP动画）</title>
+	<link rel="stylesheet" href="ilb/css/style.css">
+	<script src="ilb/js/vue2517.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/svgaplayerweb@2.3.0/build/svga.min.js"></script>
+	<style>
+		.canbtn {
+			background: #f8585c; 
+			color: #fff; 
+			width: 200px; 
+			height: 50px; 
+			line-height: 50px; 
+			text-align: center; 
+			border-radius: 25px;
+			cursor: pointer;
+		}
+		.canbtn:hover {
+			opacity: .9;
+		}
+		.canbtn:active {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="app" v-cloak class="mg">
+		<header class="nav fb">
+			<div class="fb ali_ite_cen">
+				<div class="logo"></div>
+				<h1>MG动画练习（直播类APP动画）</h1>
+			</div>
+		</header>
+		<section class="fb ali_ite_cen jus_con_cen">
+			<div>
+				<h3>一、奖杯礼品动画</h3>
+				<img src="ilb/img/SVGA动画练习1-1.gif" alt="">
+			</div>
+			<div>
+				<h3>二、配对成功动画</h3>
+				<img src="ilb/img/SVGA动画练习2-2.gif" alt="">
+			</div>
+		</section>
+		<section style="margin: 30px 0; color: #c3c4cc; text-align: center;">*以上用来展示动画的底图来自互联网（如侵权请告知删除）http://svga.io/img/index-example.jpg?h=7286240e0b0e12dea64b</section>
+
+		<section class="fb fle_dir_col ali_ite_cen">
+			<h3>三、Svga格式动画播放</h3>
+			<div id="demoCanvas" style="width: 256px; height: 256px;"></div>
+			<div id="demoCanvas2" style="width: 375px; height: 480px;"></div>
+			<div class="canbtn" style="" onclick="clickbtn(flg=!flg)">切换头像</div>
+		</section>
+
+		<footer>Copyright 2018-2019 © by D³</footer>
+	</div>
+	<script src="ilb/js/index.js"></script>
+	<script type="text/javascript">
+		var player = new SVGA.Player('#demoCanvas');
+		var parser = new SVGA.Parser('#demoCanvas');
+		parser.load('ilb/img/奖杯动画.svga', function(videoItem) {
+		    player.setVideoItem(videoItem);
+		    player.startAnimation();
+		})
+		var player2 = new SVGA.Player('#demoCanvas2');
+		var parser2 = new SVGA.Parser('#demoCanvas2');
+		parser2.load('ilb/img/匹配成功动画.svga', function(videoItem) {
+		    player2.setVideoItem(videoItem);
+		    player2.startAnimation();		    
+		})
+		var flg = false;
+		var clickbtn = function(flg) {
+			if (flg) {
+				player2.setImage('ilb/img/头像2.png', 'ImageKey');
+			} else {
+				player2.setImage('ilb/img/头像.png', 'ImageKey');
+			}
+		}
+	</script>
+</body>
+</html>

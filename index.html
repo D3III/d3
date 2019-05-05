@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>D³个人作品集</title>
+	<!-- <link rel="stylesheet" href="ilb/iconfont/D3III16glBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III16gfBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III20glBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III20gfBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III24glBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III24gfBasic/iconfont.css">
+	<link rel="stylesheet" href="ilb/iconfont/D3III16glMobius/iconfont.css"> -->
+	<link rel="stylesheet" href="ilb/css/style.css">
+	<script src="ilb/js/vue2517.js"></script>
+	<!-- <script src="ilb/iconfont/D3III16glBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III16gfBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III20glBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III20gfBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III24glBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III24gfBasic/iconfont.js"></script>
+	<script src="ilb/iconfont/D3III16glMobius/iconfont.js"></script> -->
+	<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+</head>
+<body>
+	<div id="app" v-cloak>
+		<header class="nav fb">
+			<div class="fb ali_ite_cen">
+				<div class="logo"></div>
+				<h1>D³个人作品集</h1>
+			</div>
+		</header>
+		<section>
+			<ul class="pwlist fb fle_wra">
+				<li v-for="item in lists" :key="item.id" >
+					<a :href="item.url" target="_blank" :style="item.cover"></a>
+					<!-- <h3>{{ item.title }}</h3> -->
+				</li>
+			</ul>
+			
+		</section>
+		<footer>Copyright 2018-2019 © by D³</footer>
+	</div>
+	<script src="ilb/js/index.js"></script>
+</body>
+</html>

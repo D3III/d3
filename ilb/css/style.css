@@ -1,0 +1,308 @@
+html, body, div, p, h1, h2, h3, h4, h5, h6, header, nav, aside, article, section, footer, ul, ol, li, form, input, textarea, label, fieldset, legend, select, option, img, a, span, strong, em, hr, marquee, svg {
+	margin: 0;
+	padding: 0;
+	box-sizing: -webkit-border-box;
+	box-sizing: -moz-border-box;
+	box-sizing: -0-border-box;
+	box-sizing: -ms-border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.2rem;
+	font-family: Verdana, Arial, "微软雅黑", "宋体";
+	line-height: 1em;
+	color: #666;
+	background-color: #fafafc;
+	padding-top: 60px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.8rem;
+	font-family: "微软雅黑";
+	line-height: 1.2em;
+	font-weight: normal;
+	color: #333;
+}
+p {
+	line-height: 1.8em;
+}
+ul, ol {
+	list-style: none outside;
+	font-size: 1.4rem;
+}
+a, img, fieldset {
+	border: 0 none;
+	color: #666;
+}
+img {
+	vertical-align: top;
+}
+input {
+	outline: 0 none;
+}
+select {
+	outline: 0 none;
+	border: none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+select::-ms-expand {
+	display: none;
+}
+a {
+	outline: 0 none;
+	text-decoration: none;
+}
+strong {
+	font-weight: normal;
+}
+em {
+	font-style: normal;
+}
+/*flexbox弹性盒子*/
+.fb {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+/*flex*/
+.f1 {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+.f2 {
+	-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	-ms-flex: 2;
+	-webkit-flex: 2;
+	flex: 2;
+}
+.f3 {
+	-webkit-box-flex: 3;
+	-moz-box-flex: 3;
+	-ms-flex: 3;
+	-webkit-flex: 3;
+	flex: 3;
+}
+.f4 {
+	-webkit-box-flex: 4;
+	-moz-box-flex: 4;
+	-ms-flex: 4;
+	-webkit-flex: 4;
+	flex: 4;
+}
+.f5 {
+	-webkit-box-flex: 5;
+	-moz-box-flex: 5;
+	-ms-flex: 5;
+	-webkit-flex: 5;
+	flex: 5;
+}
+.fAuto {
+	-webkit-box-flex: auto;
+	-moz-box-flex: auto;
+	-ms-flex: auto;
+	-webkit-flex: auto;
+	flex: auto;
+}
+/*align-items (适用于父类容器上)
+设置或检索弹性盒子元素在侧轴（纵轴）方向上。
+align-items: flex-start | flex-end | center | baseline | stretch*/
+.ali_ite_cen {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.ali_ite_str {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+}
+/*align-content (适用于父类容器上)
+设置或检索弹性盒堆叠伸缩行的对齐方式。
+align-content: flex-start | flex-end | center | space-between | space-around | stretch*/
+.ali_con_spa {
+	-ms-flex-line: justify;
+	-webkit-align-content: space-between;
+	align-content: space-between;
+}
+/*justify-content (适用于父类容器上)
+设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+justify-content: flex-start | flex-end | center | space-between | space-around*/
+.jus_con_cen {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.jus_con_spa {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+/*flex-direction (适用于父类容器的元素上)
+设置或检索伸缩盒对象的子元素在父容器中的位置。
+flex-direction: row | row-reverse | column | column-reverse*/
+.fle_dir_col {
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+/*flex-wrap (适用于父类容器上)
+设置或检索伸缩盒对象的子元素超出父容器时是否换行。
+flex-wrap: nowrap | wrap | wrap-reverse*/
+.fle_wra {
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+/*order (适用于弹性盒模型容器子元素)
+设置或检索弹性盒模型对象的子元素出現的順序。
+order: <integer>*/
+.ord1 {
+	-webkit-box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;  
+	-ms-flex-order: 1;
+ 	-webkit-order: 1;
+  	order: 1;
+}
+.ord2 {
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;  
+	-ms-flex-order: 2;
+ 	-webkit-order: 2;
+  	order: 2;
+}
+.ord3 {
+	-webkit-box-ordinal-group: 3;
+	-moz-box-ordinal-group: 3;  
+	-ms-flex-order: 3;
+ 	-webkit-order: 3;
+  	order: 3;
+}
+
+#app {
+	margin: 20px;
+}
+[v-cloak] {
+	display: none;
+}
+.nav {
+	border-bottom: 2px solid #f1f3f7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 0 20px;
+}
+.nav h1 { 
+	font-size: 1.4rem;
+	font-weight: bold;
+	/*overflow: hidden;
+	text-overflow:ellipsis;*/
+	min-width: 128px;
+}
+.logo {
+	min-width: 40px;
+	min-height: 40px;
+	background: url('../img/LOGO.jpg') center center no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+}
+.pwlist li {
+	width: 25%;
+	padding: 0.5%;
+	/*margin: 0.5%; */
+	position: relative;
+}
+/*.pwlist li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: #fff;
+	z-index: -1;
+}*/
+.pwlist a {
+	display: block;
+	width: 100%;
+	padding-top: 56.25%;
+	background: center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	border-radius: 4px;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+    -webkit-transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.pwlist a:hover {
+	transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+}
+.pwlist h3 {
+	font-size: 1.4rem;
+	margin: 1.5em 0 0.5em;
+	line-height: 1.3em;
+}
+
+footer {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 20px 0;
+	color: #c3c6cc;
+}
+/*****1440~*****/
+@media (max-width: 1440px) {
+	.pwlist li {
+		width: 33.333%;
+		padding: 0.6%;
+	}
+}
+/*****1024~*****/
+@media (max-width: 1024px) {
+	.pwlist li {
+		width: 50%;
+		padding: 0.8%;
+	}
+}
+/*****640~*****/
+@media (max-width: 640px) {
+	.pwlist li {
+		width: 100%;
+		padding: 1.2%;
+	}
+}
+
+/*****MG动画*****/
+.mg h3 {
+	margin: 20px 0;
+}
+.mg section > div {
+	margin: 10px 20px;
+}
+
+/*****WXP办公*****/
+.wxp {
+	text-align: center;
+}
