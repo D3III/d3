@@ -136,7 +136,7 @@ var vm = new Vue ({
         cover: {
           'background-image': 'url("ilb/img/cover/cover13.gif")',
         },
-        url: 'https://d3iii.github.io/d3iiiPW//mg.html'
+        url: 'https://d3iii.github.io/d3//mg.html'
       },
       {
         id: 18,
@@ -144,7 +144,7 @@ var vm = new Vue ({
         cover: {
           'background-image': 'url("ilb/img/cover/cover14.gif")',
         },
-        url: 'https://d3iii.github.io/d3iiiPW//wxp.html'
+        url: 'https://d3iii.github.io/d3//wxp.html'
       }
     ]
   },
