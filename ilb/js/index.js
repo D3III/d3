@@ -26,30 +26,30 @@ var vm = new Vue ({
         },
         url: 'https://www.ui.cn/detail/447584.html'
       },
-      {
-        id: 4,
-        title: '（2016年）谭木匠 七夕情书（梳）',
-        cover: {
-          'background-image': 'url("ilb/img/cover/cover03-1.png")',
-        },
-        url: 'https://www.zcool.com.cn/work/ZMTc2MjAwODg=.html'
-      },
-      {
-        id: 5,
-        title: '（2016年）旧电脑打不开新视界',
-        cover: {
-          'background-image': 'url("ilb/img/cover/cover03-2.png")',
-        },
-        url: 'https://huaban.com/boards/30540168/'
-      },
-      {
-        id: 6,
-        title: '（2016年）航空大世界卡通人物形象',
-        cover: {
-          'background-image': 'url("ilb/img/cover/cover03-3.png")',
-        },
-        url: 'https://www.zcool.com.cn/work/ZMTgzMDg4MDg=.html'
-      },
+      // {
+      //   id: 4,
+      //   title: '（2016年）谭木匠 七夕情书（梳）',
+      //   cover: {
+      //     'background-image': 'url("ilb/img/cover/cover03-1.png")',
+      //   },
+      //   url: 'https://www.zcool.com.cn/work/ZMTc2MjAwODg=.html'
+      // },
+      // {
+      //   id: 5,
+      //   title: '（2016年）旧电脑打不开新视界',
+      //   cover: {
+      //     'background-image': 'url("ilb/img/cover/cover03-2.png")',
+      //   },
+      //   url: 'https://huaban.com/boards/30540168/'
+      // },
+      // {
+      //   id: 6,
+      //   title: '（2016年）航空大世界卡通人物形象',
+      //   cover: {
+      //     'background-image': 'url("ilb/img/cover/cover03-3.png")',
+      //   },
+      //   url: 'https://www.zcool.com.cn/work/ZMTgzMDg4MDg=.html'
+      // },
       {
         id: 7,
         title: '（2016年）智能楼宇项目设计',
